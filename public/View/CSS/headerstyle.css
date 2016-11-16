@@ -12,10 +12,6 @@ nav{
 ul{
 	padding: 7px;
 }
-.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
-    background-color: ##D9534F;
-    color: ##D9534F;
-}
 input-group{
 	margin-left:10px;
 }
