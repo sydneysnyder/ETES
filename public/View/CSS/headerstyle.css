@@ -4,13 +4,17 @@ html{
 	font-family:Arial, Helvetica, sans-serif;
 }
 #con2{
-	padding-top: 100px;
+	padding-top: 20px;
 }
 nav{
 	background:#F00;
 }
 ul{
 	padding: 7px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    background-color: ##D9534F;
+    color: ##D9534F;
 }
 button{
 	height: 45px;
@@ -21,6 +25,15 @@ button{
 	border-color: white;
 	background: white;
 }
+input-group{
+	margin-left:10px;
+}
+input{
+	font-size:20px;
+	height: 60px;
+	margin-bottom: 10px;
+}
+
 container{
 	background:#FFF;
 }

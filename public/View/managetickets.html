@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ETES</title>
+	
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/headerstyle.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container" id="con2">
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="background:red;">
+			<div class="navbar-header" style="float:left;">
+				<a href="#"><img src="./images/logo.png" class="Logo"></a>
+			</div>
+			<div style="float:right">
+				<ul class="nav navbar-nav" style="float:right;">
+				<a href="./landing.html" style="margin-right:25px;"><img src="./images/manage.png" class="icon"></a>
+				<a href="./header.html" style="margin-right:25px;"><img src="./images/search.png" class="icon"></a>
+				<a href="./landing.html" style="margin-right:25px;"><img src="./images/logout.png" class="icon"></a>
+			</ul>
+		</nav>
+        </div>
+        
+<div class="jumbotron text-center search" style = "background-color: white;margin-left:5px;margin-right:20px;margin-bottom:20px;margin-top:0;">
+<div class="container">
+<div class = "row" style:"margin:10px;float:left;">
+  <div class="col-lg-4">
+<ul class="nav nav-pills" style="float:left;">
+  <li class="active"><a href="#sell" data-toggle="tab">Sell Tickets</a></li>
+  <li><a href="#buy" data-toggle="tab">Past Purchases</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>
+  <div class="tab-content">
+  <!--Sell-->
+  <div id="sell" class = "tab-pane active">
+  <a href="./sell.html" class="btn btn-danger" title="Sell" align=center><span>Sell Tickets</span></a>
+  <h2>Past Sales</h2>
+   <table align=center style="font-size:24px;padding:10px;">
+  <tr>
+  <th>Price</th>
+  <th>Event</th>
+  <th>Date</th>
+  <th>Seats</th>
+  </tr>
+  <tr>
+  <td>$99.99</td>
+  <td>The Warriors at Oracle Arena</td>
+  <td>11/19/16</td>
+  <td>AA22</td>
+  </tr>
+  </table>
+  <!--Lists Tickets You Have For Sale-->
+  </div>
+  <!--Buy-->
+  <div id="buy" class = "tab-pane">
+  <h2>Past Purchases</h2>
+  <table align=center style="font-size:24px; border-spacing: 5px;">
+  <tr>
+  <th>Price</th>
+  <th>Event</th>
+  <th>Date</th>
+  <th>Seats</th>
+  <th>Seller</th>
+  </tr>
+  <tr>
+  <td>$49.99</td>
+  <td>The Warriors at Oracle Arena</td>
+  <td>10/14/16</td>
+  <td>GG12</td>
+  <td>Bob Smith</td>
+  </tr>
+  </table>
+  <!--Lists Past Purchases-->
+  </div>
+  </div>
+</div>
+</body>
+</html>

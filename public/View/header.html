@@ -5,7 +5,7 @@
 <title>ETES</title>
 	
     <!-- CSS -->
-    <link rel="stylesheet" href="./headerstyle.css">
+    <link rel="stylesheet" href="./CSS/headerstyle.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	<!-- jQuery library -->
@@ -17,36 +17,35 @@
 
 <body>
 <div class="container" id="con2">
-	
-		<!-- HEADER(NOT LOGGED IN) -->
 		<nav class="navbar navbar-inverse navbar-fixed-top" style="background:red;">
 			<div class="navbar-header" style="float:left;">
-				<a href="#"><img src="./logo.png" class="Logo"></a>
+				<a href="#"><img src="./images/logo.png" class="Logo"></a>
 			</div>
 			<div style="float:right">
 				<ul class="nav navbar-nav" style="float:right;">
-				<button type="button" class="tile-button" onclick="./landing.html">Log Out</button>
+				<a href="./managetickets.html" style="margin-right:25px;"><img src="./images/manage.png" class="icon"></a>
+				<a href="./header.html" style="margin-right:25px;"><img src="./images/search.png" class="icon"></a>
+				<a href="./landing.html" style="margin-right:25px;"><img src="./images/logout.png" class="icon"></a>
 			</ul>
 		</nav>
         </div>
-<!--
-<p>
-        <?php
-
-
-    try{
-        $con = new PDO("ibm:host=localhost; dbname=ravi4","ZUSER24","password");
-		$con->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-        }
         
-   catch(PDOException $e){
-		print "Error";
-	}
-?>
-</p>
--->
-<div class="jumbotron text-center">
-<p> Ticket Sales Stuff </p>
+<div class="jumbotron text-center search" style = "background-color: white;margin-left:20px;margin-right:20px;margin-bottom:20px;">
+
+	<!-- FOR THE SEARCH FILEDS-->
+  <div class = "row" style:"margin:10px;">
+  <div class="col-lg-4">
+    <div class="input-group" style:"margin-left:20px;">
+      <input type="text" class="form-control" style="font-size:20px;height: 45px;"placeholder="Search Tickets by Location or Event">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default" title="Search"><span class="glyphicon glyphicon-search"></span></button>
+        </div><!--row-->
+        </div><!--col-lg-4-->
+        </div><!--inputgroup-->
+        </div><!--input group button-->
+        <br />
+        
+   <div id="results"></div>
 </div>
 </body>
 </html>

@@ -1,21 +1,15 @@
 @charset "UTF-8";
 /* CSS Document */
 html{
-	background:url(homebackground.jpg);
+	background:url("homebackground.jpg");
 }
 body{
-	padding-top: 8%;
-	font-family:Arial, Gadget, sans-serif;
+	padding-top: 20%;
+    background-color: transparent;
+	font-family: Arial, Gadget, sans-serif;
 }
-button{
-	margin:10px;
-	height: inherit;
-	width:inherit;
-	font-size:16px;
-	color:#000;
-	border-radius:5px;
-	border-color: white;
-	background: white;
+div .grid{
+	background-color:transparent;
 }
 label{
 	font-size: 18px;
@@ -27,7 +21,8 @@ label{
 	width: 300px;
 	margin-bottom: 10px;
 }
-a{
-	font-size: 12px;
+a.link{
+	font-family:Arial, Gadget, sans-serif;
+	font-size: 14px;
 	color: black;
 }
