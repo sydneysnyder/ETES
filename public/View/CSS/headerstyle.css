@@ -40,3 +40,11 @@ table{
 th{
 	padding: 10px;
 }
+h{
+	font-family:"Verdana";
+	font-size: 40px;
+}
+div.footer {
+    position:fixed;
+    bottom:0;
+}
