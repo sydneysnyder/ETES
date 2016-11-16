@@ -6,7 +6,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/headerstyle.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+	
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -29,24 +29,23 @@
 		</nav>
         </div>
         
-<div class="jumbotron text-center search" style = "background-color: white;margin-left:5px;margin-right:20px;margin-bottom:20px;margin-top:0;">
+<div class="jumbotron text-center search" style = "background-color: white;margin-left:20px;margin-right:20px;margin-bottom:20px;margin-top:0;">
 <div class="container">
-<div class = "row" style:"margin:10px;float:left;">
-  <div class="col-lg-4">
+<div class = "row" style:"float:left;">
 <ul class="nav nav-pills" style="float:left;">
-  <li class="active"><a href="#sell" data-toggle="tab">Sell Tickets</a></li>
-  <li><a href="#buy" data-toggle="tab">Past Purchases</a></li>
+  <li class="active"><a href="#sell" data-toggle="tab" style="font-size:20px;">Your Tickets</a></li>
+  <li><a href="#buy" data-toggle="tab" style="font-size:20px;">Your Purchases</a></li>
   </ul>
-  </div>
   </div>
   </div>
   <div class="tab-content">
   <!--Sell-->
   <div id="sell" class = "tab-pane active">
-  <a href="./sell.html" class="btn btn-danger" title="Sell" style="margin-right:350px;float:right;"><span>Sell Tickets</span></a>
+  <a href="./sell.html" class="btn btn-danger" title="Sell" style="font-size:20px;float:right;height:inherit; width=inherit;margin-right:50px;"><span>Sell Tickets</span></a>
   <br />
-  <h2>Past Sales</h2>
-  <table align=center>
+  <br />
+  <h2 align=center>Past Sales</h2>
+  <table align=center class="table table-bordered table-hover">
   <tr align=center>
   <th>Price</th>
   <th>Event</th>
@@ -65,7 +64,7 @@
   <!--Buy-->
   <div id="buy" class = "tab-pane">
   <h2>Past Purchases</h2>
-  <table align=center>
+  <table align=center class="table table-bordered table-hover">
   <tr align=center>
   <th>Price</th>
   <th>Event</th>
