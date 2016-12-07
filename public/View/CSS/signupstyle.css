@@ -3,6 +3,9 @@
 html{
 	background:white;
 }
+h{
+	font-size: 24px;
+}
 body{
 	font-family:Arial, Gadget, sans-serif;
 }
