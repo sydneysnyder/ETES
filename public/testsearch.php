@@ -72,8 +72,8 @@
 					<?php
 					
 					while($row = $stmt->fetch()) {
-						echo ' <div class = "col-md-2"><div class="boxed" align = "center" style="border: 2px solid #F00; border-radius: 5px; background: white;"><br /><img src="./view/images/golden1center.jpg" width = 150px height = 100px ><br /><p1>' . $row['name'] .
-							 '<br /></p1><br /><p1>' . $row['description'] .
+						echo ' <div class = "col-md-2"><div class="boxed" align = "center" style="background-color: white; border: 2px solid #F00; border-radius: 5px;"><br /><img src="./view/images/golden1center.jpg" width = 150px height = 100px ><br /><p1>' . $row['name'] .
+							 '</p1><br /><p1>' . $row['description'] .
 							 '</p1><br /><p2>' . $row['date'] .
 							 ' @ ' . $row['time'] .
 							 '</p2></div></div>';
