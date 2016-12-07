@@ -19,13 +19,13 @@
 <div class="container" id="con2">
 		<nav class="navbar navbar-inverse navbar-fixed-top" style="background:red;">
 			<div class="navbar-header" style="float:left;">
-				<a href="./index.html"><img src="./view/images/logo.png" class="Logo"></a>
+				<a href="./view/index.html"><img src="./view/images/logo.png" class="Logo"></a>
 			</div>
 			<div style="float:right">
 				<ul class="nav navbar-nav" style="float:right;">
-				<a href="./managetickets.html" style="margin-right:25px;"><img src="./view/images/manage.png" class="icon"></a>
-				<a href="./search.html" style="margin-right:25px;"><img src="./view/images/search.png" class="icon"></a>
-				<a href="./login.html" style="margin-right:25px;"><img src="./view/images/logout.png" class="icon"></a>
+				<a href="./view/managetickets.html" style="margin-right:25px;"><img src="./view/images/manage.png" class="icon"></a>
+				<a href="./view/search.html" style="margin-right:25px;"><img src="./view/images/search.png" class="icon"></a>
+				<a href="./view/login.html" style="margin-right:25px;"><img src="./view/images/logout.png" class="icon"></a>
 			</ul>
 		</nav>
         </div>
