@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ETES</title>
+	
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/headerstyle.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container" id="con2">
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="background:red;">
+			<div class="navbar-header" style="float:left;">
+				<a href="./header.html"><img src="./images/logo.png" class="Logo"></a>
+			</div>
+			<div style="float:right">
+				<ul class="nav navbar-nav" style="float:right;">
+				<a href="./managetickets.html" style="margin-right:25px;"><img src="./images/manage.png" class="icon"></a>
+				<a href="./header.html" style="margin-right:25px;"><img src="./images/search.png" class="icon"></a>
+				<a href="./landing.html" style="margin-right:25px;"><img src="./images/logout.png" class="icon"></a>
+			</ul>
+		</nav>
+        </div>
+        
+<div class="jumbotron text-center search" style = "background-color: white;margin-left:20px;margin-right:20px;margin-bottom:20px;">
+
+	<!-- FOR THE SEARCH FILEDS-->
+  <div class = "row" style:"margin:10px;">
+  <div class="col-lg-4">
+    <div class="input-group" style:"margin-left:20px;">
+      <input type="text" class="form-control" style="font-size:20px;height: 45px;"placeholder="Search Tickets by Location or Event">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default" title="Search" style="font-size:20px;height: 45px;"><span class="glyphicon glyphicon-search"></span></button>
+        </div><!--row-->
+        </div><!--col-lg-4-->
+        </div><!--inputgroup-->
+        </div><!--input group button-->
+        <br />
+        
+   <div id="results">
+   <h align=center>All Tickets</h>
+  <table align=center class="table table-bordered table-hover">
+  <tr align=center>
+  <th>Price</th>
+  <th>Event</th>
+  <th>Date</th>
+  <th>Seats</th>
+  <th></th>
+  </tr>
+  <tr>
+  <td>$19.99</td>
+  <td>Sharks Hockey at SAC Center</td>
+  <td>11/21/16</td>
+  <td>GG26</td>
+  <td><a href="./sell.html" class="btn btn-danger" title="Buy" style="font-size:24px;height:inherit; width=inherit;"><span>Buy</span></a></td>
+  </tr>
+  </table>
+   </div>
+</div>
+<div class="footer">
+<span style="color:black"><p>&copy;2016 <b><i>CS189 Team 4</i></b> All Rights Reserved.</p></span>
+</div>
+</body>
+</html>
