@@ -34,8 +34,6 @@
 						
 			<div id="content">
 				<br />
-				<h style="font-size:40px;">Search Results</h>
-				<hr />
 				<form method="GET">
 					<div class = "row" style:"margin:10px;">
   <div class="col-lg-4">
@@ -67,19 +65,20 @@
 
 				</form>
  				<div id="results">
-  					 <h align=center>All Tickets</h>
-  					  <div class = "col-md-2">
-   						<div class="boxed" align = "center">
          				 <br />
+         				 <h style="font-size:36px;">Search Results</h>
+				<hr />
      	 				 <br />
 					<?php
 					
 					while($row = $stmt->fetch()) {
-						echo '<div class="boxed" align = "center"><img src="./view/images/golden1center.jpg" width = 150px height = 100px ><br /><p1>' . $row['name'] .
+						echo ' <div class = "col-md-2"><div class="boxed" align = "center" style="border: 2px solid #F00; 
+	border-radius: 5px;	
+	background-color: white;"><img src="./view/images/golden1center.jpg" width = 150px height = 100px ><br /><p1>' . $row['name'] .
 							 '</p1><br /><p1>' . $row['description'] .
 							 '</p1><br /><p2>' . $row['date'] .
 							 ' @ ' . $row['time'] .
-							 '</p2></div>';
+							 '</p2></div></div>';
 					}
 					?>
 				</div>
