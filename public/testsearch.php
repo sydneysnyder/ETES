@@ -1,25 +1,53 @@
-<?php session_start() ?>
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ETES</title>
+	
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/headerstyle.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<html>
-	<head>
-		<title>Search</title>
-	</head>
-	<body>
-		<div id="container">
-			
-			
-					
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container" id="con2">
+		<nav class="navbar navbar-inverse navbar-fixed-top" style="background:red;">
+			<div class="navbar-header" style="float:left;">
+				<a href="./index.html"><img src="./view/images/logo.png" class="Logo"></a>
+			</div>
+			<div style="float:right">
+				<ul class="nav navbar-nav" style="float:right;">
+				<a href="./managetickets.html" style="margin-right:25px;"><img src="./view/images/manage.png" class="icon"></a>
+				<a href="./search.html" style="margin-right:25px;"><img src="./view/images/search.png" class="icon"></a>
+				<a href="./login.html" style="margin-right:25px;"><img src="./view/images/logout.png" class="icon"></a>
+			</ul>
+		</nav>
+        </div>
+        
+<div class="jumbotron text-center search" style = "background-color: white;margin-left:20px;margin-right:20px;margin-bottom:20px;">
+						
 			<div id="content">
-				<h1>Events</h1>
+				<br />
+				<h style="font-size:40px;">Search Results</h>
 				<hr />
 				<form method="GET">
-					Search events:
-					<p>						
-						<label for="name">Event</label>
-						<input type="text" name="name" id="name" />
-						<input type="submit" value="Submit" />
-					</p>
+					<div class = "row" style:"margin:10px;">
+  <div class="col-lg-4">
+    <div class="input-group" style:"margin-left:20px;">
+      <input type="text" name="name" id="name" class="form-control" style="font-size:20px;height: 45px;"placeholder="Search Tickets by Event">
+      	<div class="input-group-btn">
+        		<button type="button" value="submit" class="btn btn-default" title="Search" style="font-size:20px;height: 45px;"><span class="glyphicon glyphicon-search"></span></button>
+        		</div><!--row-->
+        		</div><!--col-lg-4-->
+        	</div><!--inputgroup-->
+        </div><!--input group button-->
+        <br />
                     <?php
 
                     include_once("php/connect_db.php");
@@ -38,29 +66,24 @@
                     ?>
 
 				</form>
-				<hr />
-				<table border="1" cellpadding="5" style="border-collapse: collapse;border: 1px solid #888;margin: auto; width: 70%;">
-					<thead>
-						<tr>
-							<th>ID</th>
-							<th>Name</th>
-							<th>Description</th>
-							<th>Time</th>
-                            <th>Date</th>
-						</tr>
-					</thead>
+ 				<div id="results">
+  					 <h align=center>All Tickets</h>
+  					  <div class = "col-md-2">
+   						<div class="boxed" align = "center">
+         				 <br />
+     	 				 <br />
 					<?php
 					
 					while($row = $stmt->fetch()) {
-						echo '<tr><td>' . $row['event_id'] .
-							 '</td><td>' . $row['name'] .
-							 '</td><td>' . $row['description'] .
-							 '</td><td>' . $row['time'] .
-							 '</td><td>' . $row['date'] .
-							 '</td></tr>';
+						echo '<div class="boxed" align = "center"><img src="./view/images/golden1center.jpg" width = 150px height = 100px ><br /><p1>' . $row['name'] .
+							 '</p1><br /><p1>' . $row['description'] .
+							 '</p1><br /><p2>' . $row['date'] .
+							 ' @ ' . $row['time'] .
+							 '</p2></div>';
 					}
 					?>
-				</table>
+				</div>
+				</div>
 			</div>
 		</div>
 	</body>
