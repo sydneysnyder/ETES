@@ -17,9 +17,9 @@
 				$query =
 				"INSERT INTO user 
 				(id, email, password, birthdate, fname, lname, 
-				 role, address, city, zip) 
+				  address, city, zip) 
 				VALUES (NULL, :email, :password, :birthdate, :fname, :lname,
-						:role, :address, :city, :zip)";
+						 :address, :city, :zip)";
 				
 				$yearOfBirth = $_POST['yearOfBirth'];
 				$monthOfBirth = $_POST['monthOfBirth'];
@@ -35,7 +35,6 @@
 				$stmt = $database->prepare($query);
 				$stmt->execute(array('email' => $_POST['email'],
 									 'password' => $_POST['password'],
-									 'role' => $_POST['role'],
 									 'fname' => $_POST['fname'],
 									 'lname' => $_POST['lname'],
    									 'address' => $_POST['address'],
