@@ -1,3 +1,6 @@
+<?php session_start(); ?>
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -25,7 +28,7 @@
 				<ul class="nav navbar-nav" style="float:right;">
 				<a href="./view/managetickets.html" style="margin-right:25px;"><img src="./view/images/manage.png" class="icon"></a>
 				<a href="./view/search.html" style="margin-right:25px;"><img src="./view/images/search.png" class="icon"></a>
-				<a href="./view/login.html" style="margin-right:25px;"><img src="./view/images/logout.png" class="icon"></a>
+				<a href="./logout.php" style="margin-right:25px;"><img src="./view/images/logout.png" class="icon"></a>
 			</ul>
 		</nav>
         </div>

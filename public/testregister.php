@@ -1,5 +1,8 @@
-<?php session_start(); ?>
-
+<?php session_start(); 
+ini_set('display_startup_errors',1);
+ini_set('display_errors',1);
+error_reporting(-1);
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -32,7 +35,7 @@
         	<h style="font-size:32px;margin-top:40px;"><b> Join ETES </b></h>
 		<div id="container" align=center>
 				<?php
-				if(!isset($_SESSION['user_id'])) {
+				if(!isset($_SESSION['id'])) {
 				?>
 					<form action="testregistered.php" method="post" class="form" id="post_form">
 						<div class="row">

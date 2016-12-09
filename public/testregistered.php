@@ -1,5 +1,6 @@
-<?php session_start();?>
-
+<?php 
+	session_start();
+?>
 <!DOCTYPE html>
 
 <html>
@@ -41,6 +42,7 @@
 									 'city' => $_POST['city'],
                                      'zip' => $_POST['zip'],
 									 'birthdate' => date($date)));
+
 				?>
 			</div>
 		</div>
