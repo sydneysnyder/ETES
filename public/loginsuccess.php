@@ -16,6 +16,7 @@ if($_POST['password'] == $user['password'])
 	$_SESSION['id'] = $user['id'];
 	$_SESSION['email'] = $user['email'];
 	//$_SESSION['admin'] = $user['admin'];
+	echo "You have successfully logged in";
 }
 else
 {

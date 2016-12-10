@@ -20,8 +20,8 @@
 									 'available' => $_POST['available'],
 									 'etes_commission' => $_POST['etes_commission'],
 									 'seat' => $_POST['seat'],
-									 'user_id' => $_SESSION['id'],
-									 'event_id' => $_POST['event_id']));
+									 'user_id' => $_SESSION['id'], 
+                                     'event_id' => $_POST['event_id']));
 			?>
         </div>
     </body>
