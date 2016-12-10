@@ -7,10 +7,10 @@
 	</head>
 	<body>	
 			<?php
-			
-			include_once("php/connect_db.php");			
-			$sql = $database->prepare("SELECT * FROM ticket ORDER BY seat ASC");
-			$sql->execute();
+			include_once("php/connect_db.php");	
+
+			$sql = $database->prepare("SELECT * FROM ticket WHERE event_id = :id ORDER BY seat ASC");
+			$sql->execute(array("id" => $_GET['id']));
 			?>
 						
 			<div>
