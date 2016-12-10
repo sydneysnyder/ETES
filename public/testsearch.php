@@ -22,18 +22,17 @@
 <div class="container" id="con2">
 		<nav class="navbar navbar-inverse navbar-fixed-top" style="background:red;">
 			<div class="navbar-header" style="float:left;">
-				<a href="./view/index.html"><img src="./view/images/logo.png" class="Logo"></a>
+				<a href="./index.html"><img src="./view/images/logo.png" class="Logo"></a>
 			</div>
 			<div style="float:right">
 				<ul class="nav navbar-nav" style="float:right;">
-				<a href="./view/managetickets.html" style="margin-right:25px;"><img src="./view/images/manage.png" class="icon"></a>
-				<a href="./view/search.html" style="margin-right:25px;"><img src="./view/images/search.png" class="icon"></a>
+				<a href="./testsearch.php" style="margin-right:25px;"><img src="./view/images/search.png" class="icon"></a>
 				<a href="./logout.php" style="margin-right:25px;"><img src="./view/images/logout.png" class="icon"></a>
 			</ul>
 		</nav>
         </div>
         
-<div class="jumbotron text-center search" style = "background-color: white;margin-left:20px;margin-right:20px;margin-bottom:20px;">
+<div class="jumbotron text-center search" style = "background: white;margin-left:20px;margin-right:20px;margin-bottom:20px;">
 						
 			<div id="content">
 				<br />
@@ -79,7 +78,16 @@
 							 '</p1><br /><p1>' . $row['description'] .
 							 '</p1><br /><p2>' . $row['date'] .
 							 ' @ ' . $row['time'] .
-							 '</p2></div></div>';
+							 '</p2></div></div>
+							 <div class="dropdown" >
+  				<button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown">Ticket Options</span>
+  					<span class="caret"></span></button>
+  				      <ul class="dropdown-menu" role="menu">
+    		    		 <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Buy Tickets</a></li>
+    		    		 <li><a href="./postticket.php"><span class="glyphicon glyphicon-credit-card"></span> Sell Tickets</a></li>
+  		              </ul>
+	  </div> <!--dropdown-->
+      <br /> ';
 					}
 					?>
 				</div>

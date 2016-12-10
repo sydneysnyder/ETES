@@ -26,7 +26,7 @@ error_reporting(-1);
 <div class="container" id="con2">
 		<nav class="navbar navbar-inverse navbar-fixed-top" style="background:red;">
 			<div class="navbar-header" style="float:left;">
-				<a href="./View/index.html"><img src="./View/images/logo.png" class="Logo"></a>
+				<a href="./index.html"><img src="./View/images/logo.png" class="Logo"></a>
 			</div>
 		</nav>
         </div>
