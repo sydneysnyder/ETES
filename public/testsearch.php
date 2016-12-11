@@ -78,7 +78,7 @@
 							 '</p1><br /><p1>' . $row['description'] .
 							 '</p1><br /><p2>' . $row['date'] .
 							 ' @ ' . $row['time'] .
-							 '</p2></div></div>
+							 '</p2><p>
 							 <div class="dropdown" >
   				<button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown">Ticket Options</span>
   					<span class="caret"></span></button>
@@ -86,8 +86,8 @@
     		    		 <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Buy Tickets</a></li>
     		    		 <li><a href="./postticket.php"><span class="glyphicon glyphicon-credit-card"></span> Sell Tickets</a></li>
   		              </ul>
-	  </div> <!--dropdown-->
-      <br /> ';
+	  </div></p> <!--dropdown-->
+      <br /></div></div> ';
 					}
 					?>
 				</div>

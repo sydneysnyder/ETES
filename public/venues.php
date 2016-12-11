@@ -45,13 +45,22 @@
          				 <h style="font-size:36px;">Venues</h>
 				<hr />
      	 				 <br />
-				<table border="1" cellpadding="5" style="border-collapse: collapse;border: 1px solid #888;margin: auto; width: 70%">
 					<?php
 					while($row = $stmt->fetch()) {
-						echo ' <div class = "col-md-2"><div class="boxed" align = "center" style="background-color: white; border: 2px solid #F00; border-radius: 5px;"><br /><img src="./view/images/golden1center.jpg" width = 150px height = 100px ><br /><p1>
+						echo ' <div class = "col-md-2"><div class="boxed" align = "center" style="background-color: white;
+						 border: 2px solid #F00; border-radius: 5px;"><br />
+						<img src="./view/images/golden1center.jpg" width = 150px height = 100px ><br /><p1>
 						' . '<a href="events.php?id=' . $row['venue_id'] . '">' . $row['name'] . '</a>' .
 							 '</p1><p2>' . $row['address'] .
-							 '</p2></div>';
+							 '</p2><div class="dropdown" >
+  				<button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown">Ticket Options</span>
+  					<span class="caret"></span></button>
+  				      <ul class="dropdown-menu" role="menu">
+    		    		 <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Buy Tickets</a></li>
+    		    		 <li><a href="./postticket.php"><span class="glyphicon glyphicon-credit-card"></span> Sell Tickets</a></li>
+  		              </ul>
+	  </div></p> <!--dropdown-->
+      <br /></div></div>';
 					}
 					?>
 				</div>
