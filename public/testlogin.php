@@ -56,11 +56,9 @@
 					</div>
 					<div class="form-group">
      			<div class="row">
-            			<a href="./index.html" class="btn btn-default" type="submit" value="Login" title="Login">
-          				<span style="text-shadow: 2px 2px #CCC;"><b>Login</b></span>
+            			<a href="./index.html" class="btn btn-danger" type="submit" value="Login" title="Login">Login
           				</a>
-                        <a href="./testregister.php" class="btn btn-default" type="create" value="Sign Up" title="Create Account">
-                        <span style="text-shadow: 2px 2px #CCC;"><b>Create Account</b></span>
+                        <a href="./testregister.php" class="btn btn-danger" type="create" value="Sign Up" title="Create Account">Create Account
          			</a>
             		</div>
 				</form>
