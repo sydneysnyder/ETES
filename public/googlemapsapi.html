@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <title>GoogleMapApi</title>
+    <head>
+        <script>
+            var driverLoc="San Jose State California"
+            var sellerLoc="Fremont California"
+            var buyerLoc="Pleasanton California"
+            var mapUrl="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDt-5kK31EpTEP6VNzt3ov0AN5z6JGmfTU&origin="+driverLoc+"&destination="+buyerLoc+"&waypoints="+sellerLoc
+           
+            function initMap(){
+                document.getElementById("map").src = mapUrl;
+            }
+            function buildMap(input){
+                if(event.keyCode == 13) {
+                    if(input.id == "binput") buyerLoc = input.value;
+                    if(input.id == "sinput") sellerLoc = input.value;
+                    mapUrl = "https://www.google.com/maps/embed/v1/directions?key=AIzaSyDt-5kK31EpTEP6VNzt3ov0AN5z6JGmfTU&origin="+driverLoc+"&destination="+buyerLoc+"&waypoints="+sellerLoc
+                    initMap();
+                    document.getElementById('map').reload();
+                }
+            }
+        </script>
+    </head>
+    <body onload="initMap()">
+        <input id="binput" class="controls" type="text" placeholder="Enter buyers location" onkeydown="buildMap(this)">
+        <input id="sinput" class="controls" type="text" placeholder="Enter sellers location" onkeydown="buildMap(this)">
+        <br/>
+        <iframe id="map" width="350" height="350" frameborder="0" style="border:0" src="">
+        </iframe>
+    </body>
+</html>
