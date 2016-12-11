@@ -71,6 +71,7 @@
          				 <h style="font-size:36px;">Search Results</h>
 				<hr />
 						<h4>Or Start by viewing all our venues <a href = "venues.php">here</a></h4>
+						Uber deliverers, use this to help guide you to your destination: <a href = "googlemapsapi.html">GOOGLE MAP API</a>
      	 				 <br />
 					<?php
 					
