@@ -7,7 +7,6 @@
 	
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/headerstyle.css">
-    <link rel="stylesheet" type="text/css" href="./css/landingstyle.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 	<!-- jQuery library -->
@@ -34,37 +33,38 @@
 <div class="jumbotron text-center search" style = "margin-left:20px;margin-right:20px;margin-bottom:20px;">
 			<div id="content">
 			<?php
-			
-			include_once("php/connect_db.php");			
-			$stmt = $database->prepare("SELECT * FROM venue ORDER BY name ASC");
-			$stmt->execute();
+			include_once("php/connect_db.php");	
+
+			$sql = $database->prepare("SELECT * FROM ticket ORDER BY seat ASC");
+			$sql->execute();
 			?>
 						
-			<div id="results">
-         				 <br />
-         				 <h style="font-size:36px;">Venues</h>
+			<div>
+				<h1>Tickets</h1>
 				<hr />
-     	 				 <br />
+				<table border="1" cellpadding="5" style="border-collapse: collapse;border: 1px solid #888;margin: auto; width: 70%">
+					<thead>
+						<tr>
+							<th>Seat</th>
+							<th>Price</th>
+							<th># Available</th>
+							<th>ETES Commission</th> 
+							<th>Purchase</th>                         
+						</tr>
+					</thead>
 					<?php
-					while($row = $stmt->fetch()) {
-						echo ' <div class = "col-md-2"><div class="boxed" align = "center" style="background-color: white;
-						 border: 2px solid #F00; border-radius: 5px;"><br />
-						<img src="./view/images/golden1center.jpg" width = 150px height = 100px ><br /><p1>
-						' . '<a href="events.php?id=' . $row['venue_id'] . '">' . $row['name'] . '</a>' .
-							 '</p1><p2>' . $row['address'] .
-							 '</p2><div class="dropdown" >
-  				<button class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown">Ticket Options</span>
-  					<span class="caret"></span></button>
-  				      <ul class="dropdown-menu" role="menu">
-    		    		 <li><a href="./alltickets.php"><span class="glyphicon glyphicon-shopping-cart"></span> Buy Tickets</a></li>
-    		    		 <li><a href="./postticket.php"><span class="glyphicon glyphicon-credit-card"></span> Sell Tickets</a></li>
-  		              </ul>
-	  </div></p> <!--dropdown-->
-      <br /></div></div>';
+					while($row = $sql->fetch()) 
+                    {
+						echo '<tr><td>'  . $row['seat'] .
+							 '</td><td>' . $row['price'] .
+                             '</td><td>' . $row['available'] .
+                             '</td><td>' . $row['etes_commission'] .
+							 '</td><td><a href="#" class="btn btn-default" type="buy" value="Buy Tickets" title="Buy Tickets"></tr>';
 					}
 					?>
-				</div>
-				</div>
+			    </table>
+			</div>
+			</div>
 			</div>
 	</body>
 </html>

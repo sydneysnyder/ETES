@@ -70,6 +70,7 @@
          				 <br />
          				 <h style="font-size:36px;">Search Results</h>
 				<hr />
+						<h4>Or Start by viewing all our venues <a href = "venues.php">here</a></h4>
      	 				 <br />
 					<?php
 					
